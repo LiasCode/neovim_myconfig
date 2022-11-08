@@ -1,0 +1,19 @@
+{
+  "colors.enable": true,
+  "diagnostic.enable": true,
+  "diagnostic.checkCurrentLine": true,
+  //"diagnostic.virtualText": true,
+  "diagnostic.virtualTextAlign": "right",
+  "diagnostic.floatConfig": {
+    "border": true,
+    "highlight": "CocFloating",
+    "rounded": true
+  },
+  "diagnostic.enableHighlightLineNumber": true,
+  "diagnostic.autoRefresh": true,
+  "floatFactory.floatConfig": {
+    "border": true,
+    "highlight": "CocFloating",
+    "rounded": true
+  }
+}
