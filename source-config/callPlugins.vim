@@ -2,8 +2,21 @@
 call plug#begin('~/.config/nvim/plugged')
 
   " Coc
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+  " LSP COMPLETATION
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/cmp-buffer'
+  Plug 'hrsh7th/cmp-path'
+  Plug 'hrsh7th/cmp-cmdline'
+  Plug 'hrsh7th/nvim-cmp'
+
+  " Snipets cpm-nvim-ultisnips
+  Plug 'SirVer/ultisnips'
+  Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+  
+  " #######################
   " -- NERDTREE
   " Plug 'preservim/nerdtree'
   " Plug 'ryanoasis/vim-devicons'
@@ -23,8 +36,7 @@ call plug#begin('~/.config/nvim/plugged')
 
   " -- SYNTAX HIGHLINHTING
   " Plug 'sheerun/vim-polyglot'
-  " Plug 'itchyny/lightline.vim'
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 
   " STATUS BAR
   Plug 'vim-airline/vim-airline'

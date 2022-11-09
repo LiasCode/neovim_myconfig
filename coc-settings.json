@@ -2,7 +2,6 @@
   "colors.enable": true,
   "diagnostic.enable": true,
   "diagnostic.checkCurrentLine": true,
-  //"diagnostic.virtualText": true,
   "diagnostic.virtualTextAlign": "right",
   "diagnostic.floatConfig": {
     "border": true,
