@@ -39,3 +39,6 @@ nmap <leader>bb <Esc>:w<CR>:Buffers<CR>
 nmap <leader>bc <Esc>:bw<CR>
 noremap <leader>bn <Esc>:w<CR>:bnext<CR>
 
+" REST
+noremap <leader>r <Plug>RestNvim
+

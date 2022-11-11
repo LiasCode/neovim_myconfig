@@ -1,5 +1,3 @@
--- examples for your init.lua
-
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -12,6 +10,7 @@ require("nvim-tree").setup({
   sort_by = "type",
   view = {
     adaptive_size = true,
+    centralize_selection = true,
     mappings = {
       list = {
         { key = "-", action = "dir_up" },
@@ -29,4 +28,9 @@ require("nvim-tree").setup({
   filters = {
     dotfiles = false,
   },
+  actions = {
+    open_file = {
+      quit_on_open = true,
+    },
+  }
 })

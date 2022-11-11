@@ -1,10 +1,12 @@
 "####################  PLUGINS SOURCES ##############################################
 
-" COC
-" source ~/.config/nvim/source-config/settings/coc.config.vim
-
-" LSP
 source ~/.config/nvim/source-config/settings/lsp.config.vim
+
+" Nvim-Tree
+" luafile  ~/.config/nvim/source-config/settings/nvim-tree.config.lua
+
+" Prettier
+source  ~/.config/nvim/source-config/settings/prettier.config.vim
 
 " NeerdCommenter
 source  ~/.config/nvim/source-config/settings/neerdcommenter.config.vim
@@ -13,7 +15,7 @@ source  ~/.config/nvim/source-config/settings/neerdcommenter.config.vim
 source ~/.config/nvim/source-config/settings/fzf.config.vim
 
 " Airline
-source  ~/.config/nvim/source-config/settings/airline.config.vim
+" source  ~/.config/nvim/source-config/settings/airline.config.vim
 
 " Treesitter
 luafile  ~/.config/nvim/source-config/settings/treesitter.config.lua
@@ -27,19 +29,57 @@ source  ~/.config/nvim/source-config/settings/themes.config.vim
 " Styled Components
 source  ~/.config/nvim/source-config/settings/styled-components.config.vim
 
-" Prettier
-source  ~/.config/nvim/source-config/settings/prettier.config.vim
+" Rest-client
+luafile  ~/.config/nvim/source-config/settings/rest-client.config.lua
 
-"########################################################################## 
-" FILE EXPLORER
-"
-" NERDTREE 
-" source ~/.config/nvim/source-config/settings/neerdtree.config.vim
-"
-let a = 20
-let a = 20
-" Nvim-Tree
-" luafile  ~/.config/nvim/source-config/settings/nvim-tree.config.lua
+" Surround
+lua require("nvim-surround").setup({})
+
+" Hlargs
+lua require("hlargs").setup { color = '#5dd6ce'}
+
+" Nvim Transparent
+luafile  ~/.config/nvim/source-config/settings/nvim-transparent.config.lua
+
+" Indent Line
+lua << EOF
+vim.opt.termguicolors = true
+vim.opt.list = true
+vim.opt.listchars:append "space:⋅"
+
+require("indent_blankline").setup {
+    show_current_context = true,
+    show_current_context_start = true,
+    space_char_blankline = " ",
+}
+EOF
+
+" Cursorline 
+lua << EOF
+  require('nvim-cursorline').setup {
+    cursorline = {
+      enable = true,
+      timeout = 500,
+      number = true,
+    },
+    cursorword = {
+      enable = true,
+      min_length = 3,
+      hl = { underline = true },
+    }
+  }
+EOF
+
+" Icon Picker
+lua << EOF
+  require("icon-picker").setup {
+    disable_legacy_commands = true
+  }
+EOF
+
+" Lua Line
+lua require('lualine').setup()
+
 "#########################################################################
 
 "################# NORMAL  SETTINGS ####################### 
@@ -71,14 +111,11 @@ set nocompatible
 " Experimental
 " set autochdir
 set autoindent
-set cursorline
-set cursorcolumn
+" set cursorline
+" set cursorcolumn
 set icon
 syntax on;
 set nuw=4
 set scrollback=10
 set signcolumn=yes
-
-" set foldmethod=expr
-" set foldexpr=nvim_treesitter#foldexpr()
 
