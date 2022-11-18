@@ -1,14 +1,12 @@
 
 colorscheme ayu-mirage
 
-let g:airline_theme='simple'
-
 lua << EOF
 
 -- Ayu Theme 
-require('ayu').setup({
-    mirage = true, -- Set to `true` to use `mirage` variant instead of `dark` for dark background.
-})
+-- require('ayu').setup({
+--     mirage = true, -- Set to `true` to use `mirage` variant instead of `dark` for dark background.
+-- })
 
 -- Lsp Colors
 require("lsp-colors").setup({

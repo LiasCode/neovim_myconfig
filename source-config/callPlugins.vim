@@ -1,45 +1,45 @@
 " PLUGINS 
 call plug#begin('~/.config/nvim/plugged')
 
-  " LSP COMPLETATION
+  " LSP 
   Plug 'neovim/nvim-lspconfig'
+  
+  " Lsp autocomplete
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'hrsh7th/cmp-buffer'
   Plug 'hrsh7th/cmp-path'
   Plug 'hrsh7th/cmp-cmdline'
   Plug 'hrsh7th/nvim-cmp'
 
+  " cmp utils
+  Plug 'ray-x/cmp-treesitter'
+  Plug 'hrsh7th/cmp-path'
+  Plug 'onsails/lspkind.nvim'
+
   " Snipets cpm-nvim-ultisnips
   Plug 'SirVer/ultisnips'
   Plug 'quangnguyen30192/cmp-nvim-ultisnips'
-  
-  " -- Nvim Tree
-  " Plug 'nvim-tree/nvim-tree.lua'
-  " Plug 'nvim-tree/nvim-web-devicons'
-  
+
   " -- Vim Vinegar
   Plug 'tpope/vim-vinegar'
 
-  " -- THEMES
+  " -- Themes
   Plug 'joshdick/onedark.vim'
   Plug 'safv12/andromeda.vim'
   Plug 'Shatur/neovim-ayu'
 
   " -- SYNTAX HIGHLINHTING
-  " Plug 'sheerun/vim-polyglot'
   Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
   Plug 'm-demare/hlargs.nvim'
 
   " STATUS BAR
-  " Plug 'vim-airline/vim-airline'
-  " Plug 'vim-airline/vim-airline-themes'
-  Plug 'nvim-lualine/lualine.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'nvim-lualine/lualine.nvim'
   Plug 'romgrk/barbar.nvim'
 
   " Fzf
-  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  Plug 'junegunn/fzf.vim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
   " Commenter 
   Plug 'preservim/nerdcommenter'
@@ -50,12 +50,8 @@ call plug#begin('~/.config/nvim/plugged')
   " Plug 'folke/trouble.nvim'
   Plug 'folke/lsp-colors.nvim'
 
-  " Neoscroll
-  Plug 'karb94/neoscroll.nvim' 
-
   " Rest client
   Plug 'rest-nvim/rest.nvim'
-  Plug 'nvim-lua/plenary.nvim' 
 
   " Surround
   Plug 'kylechui/nvim-surround'
@@ -63,9 +59,6 @@ call plug#begin('~/.config/nvim/plugged')
   " Nvim-transparent
   Plug 'xiyaowong/nvim-transparent'
 
-  " NVIM CURSORLINE HIGHLINHTING 
-  Plug 'yamatsum/nvim-cursorline'
-  
   " ICON PICKER
   Plug 'stevearc/dressing.nvim'
   Plug 'ziontee113/icon-picker.nvim'
@@ -73,9 +66,6 @@ call plug#begin('~/.config/nvim/plugged')
   " Prettier 
   Plug 'jose-elias-alvarez/null-ls.nvim'
   Plug 'MunifTanjim/prettier.nvim'
-
-  " INDENT BLANK
-  Plug 'lukas-reineke/indent-blankline.nvim' 
 
 call plug#end()
 
