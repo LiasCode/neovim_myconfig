@@ -32,7 +32,10 @@ lua require("nvim-surround").setup({})
 lua require("hlargs").setup { color = '#5dd6ce'}
 
 " Nvim Transparent
-luafile  ~/.config/nvim/source-config/settings/nvim-transparent.config.lua
+" luafile  ~/.config/nvim/source-config/settings/nvim-transparent.config.lua
+
+" Nvim-tree 
+luafile ~/.config/nvim/source-config/settings/nvim-tree.config.lua
 
 " Icon Picker
 lua << EOF
@@ -47,6 +50,7 @@ lua require('lualine').setup()
 "#########################################################################
 
 "################# SETTINGS ####################### 
+
 set tabstop=2 softtabstop=2
 set shiftwidth=2
 set expandtab

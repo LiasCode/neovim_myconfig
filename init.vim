@@ -2,7 +2,7 @@
 " PLUGINS CALL
 source ~/.config/nvim/source-config/callPlugins.vim
 
-" MAPS
+"MAPS
 source ~/.config/nvim/source-config/maps.vim
 
 " SETTINGS 

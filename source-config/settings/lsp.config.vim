@@ -129,7 +129,7 @@ lua << EOF
         ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), {'i', 'c'}),
         ['<C-e>'] = cmp.mapping({ i = cmp.mapping.close(), c = cmp.mapping.close() }),
         ['<CR>'] = cmp.mapping({
-            i = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false }),
+          i = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false }),
         }),
       }),
       sources = cmp.config.sources({
@@ -227,11 +227,13 @@ lua << EOF
       on_attach = on_attach,
       flags = lsp_flags,
     }
+
     require('lspconfig')['cssls'].setup {
       capabilities = vscodeCapabilities,
       on_attach = on_attach,
       flags = lsp_flags,
     }
+
     require('lspconfig')['jsonls'].setup {
       capabilities = vscodeCapabilities,
       on_attach = on_attach,
@@ -256,3 +258,4 @@ highlight! link CmpItemKindMethod CmpItemKindFunction
 highlight! CmpItemKindKeyword guibg=NONE guifg=#D4D4D4
 highlight! link CmpItemKindProperty CmpItemKindKeyword
 highlight! link CmpItemKindUnit CmpItemKindKeyword
+

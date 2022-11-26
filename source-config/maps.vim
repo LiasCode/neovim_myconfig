@@ -8,7 +8,7 @@ inoremap <C-l> <Esc><Esc>
 vnoremap <C-l> <Esc><Esc>
 
 " nmap <C-q> <Esc>:q<Enter>
-nmap <C-s> <Esc>:w<Enter>
+noremap <C-s> <Esc>:w<Enter>
 
 " MOVE LINES IN VISUAL MODE
 vnoremap K :m '<-2<CR>gv=gv
@@ -17,9 +17,11 @@ vnoremap J :m '>+1<CR>gv=gv
 " #########################################################################
 
 "-- EXPLORER
-noremap <leader>d <Esc>:w<CR>:Explore<CR>
-noremap <leader>vd <Esc>:w<CR>:Vexplore<CR>
-noremap <leader>hd <Esc>:w<CR>:Sexplore<CR>
+" noremap <leader>d <Esc>:w<CR>:Explore<CR>
+" noremap <leader>vd <Esc>:w<CR>:Vexplore<CR>
+" noremap <leader>hd <Esc>:w<CR>:Sexplore<CR>
+
+noremap <leader>d <Esc>:w<CR>:NvimTreeToggle<CR>
 
 " Estilo Netrw 
 let g:netrw_liststyle = 4

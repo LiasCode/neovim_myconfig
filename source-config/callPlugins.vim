@@ -19,6 +19,14 @@ call plug#begin('~/.config/nvim/plugged')
   " Snipets cpm-nvim-ultisnips
   Plug 'SirVer/ultisnips'
   Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+  Plug 'honza/vim-snippets'
+
+  " Nvim-tree
+  Plug 'nvim-tree/nvim-web-devicons'
+  Plug 'nvim-tree/nvim-tree.lua'
+
+  " Auto pair
+  Plug'jiangmiao/auto-pairs'
 
   " -- Vim Vinegar
   Plug 'tpope/vim-vinegar'
