@@ -2,7 +2,7 @@ set completeopt=menu,menuone,noselect
 
 lua << EOF
     -- Set up nvim-cmp.
-    local cmp = require'cmp'
+    local cmp = require('cmp')
     local lspkind = require('lspkind')
     local cmp_kinds = {
       Text = '  ',
@@ -132,6 +132,7 @@ lua << EOF
           i = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false }),
         }),
       }),
+
       sources = cmp.config.sources({
         { name = 'nvim_lsp' },
         { name = 'ultisnips' }, 
