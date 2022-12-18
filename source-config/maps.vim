@@ -39,3 +39,4 @@ noremap <c-a> <Esc>:BufferCloseAllButCurrent<CR>
 
 " REST
 noremap <leader>r <Plug>RestNvim
+

@@ -92,7 +92,7 @@ lua << EOF
         }),
         ['<Down>'] = cmp.mapping(cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }), {'i'}),
         ['<Up>'] = cmp.mapping(cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }), {'i'}),
-        ['<C-n>'] = cmp.mapping({
+        ['<C-Space>'] = cmp.mapping({
             c = function()
                 if cmp.visible() then
                     cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
@@ -126,7 +126,7 @@ lua << EOF
         }),
         ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), {'i', 'c'}),
         ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), {'i', 'c'}),
-        ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), {'i', 'c'}),
+        ['<C-n>'] = cmp.mapping(cmp.mapping.complete(), {'i', 'c'}),
         ['<C-e>'] = cmp.mapping({ i = cmp.mapping.close(), c = cmp.mapping.close() }),
         ['<CR>'] = cmp.mapping({
           i = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false }),

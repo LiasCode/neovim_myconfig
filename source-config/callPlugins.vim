@@ -21,12 +21,17 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'quangnguyen30192/cmp-nvim-ultisnips'
   Plug 'honza/vim-snippets'
 
+  " -- SYNTAX HIGHLINHTING
+  Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+  Plug 'm-demare/hlargs.nvim'
+  Plug 'windwp/nvim-ts-autotag'
+
   " Nvim-tree
   Plug 'nvim-tree/nvim-web-devicons'
   Plug 'nvim-tree/nvim-tree.lua'
 
   " Auto pair
-  Plug'jiangmiao/auto-pairs'
+  Plug 'jiangmiao/auto-pairs'
 
   " -- Vim Vinegar
   Plug 'tpope/vim-vinegar'
@@ -36,9 +41,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'safv12/andromeda.vim'
   Plug 'Shatur/neovim-ayu'
 
-  " -- SYNTAX HIGHLINHTING
-  Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
-  Plug 'm-demare/hlargs.nvim'
 
   " STATUS BAR
   Plug 'kyazdani42/nvim-web-devicons'
@@ -74,6 +76,9 @@ call plug#begin('~/.config/nvim/plugged')
   " Prettier 
   Plug 'jose-elias-alvarez/null-ls.nvim'
   Plug 'MunifTanjim/prettier.nvim'
+
+  " Color Preview
+  Plug 'ap/vim-css-color'
 
 call plug#end()
 

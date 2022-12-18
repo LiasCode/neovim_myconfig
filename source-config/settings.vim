@@ -47,7 +47,7 @@ EOF
 " Lua Line
 lua require('lualine').setup()
 
-"#########################################################################
+lua require('nvim-surround').setup()
 
 "################# SETTINGS ####################### 
 
